@@ -1,0 +1,24 @@
+:root{
+    --primary-button-color: #E3170A;
+    --primary-button-text-color: #FFFFFF;
+    --secondary-button-color: #8ACFE5;
+    --secondary-button-text-color: #011827;
+    --primary-ondark-text-border-button: #8ACFE5; 
+    --dark-text-color: #000000;
+    --light-text-color:#FFFFFF;
+    --light-background-color: #E5E5E5;
+    --dark-background-color: #011827;
+    --figcaption-a-color: #36769D;
+}
+
+.button-popular-card{
+    background-color: var(--primary-button-color);
+    
+}
+
+.header{
+    background-color: var(--dark-background-color);
+    color: #FFFFFF;
+    font-family: "Roboto";
+    font-weight: bold;
+}
