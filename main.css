@@ -26,12 +26,30 @@ button{
     font-weight: bold;
 }
 
+.button-on-site{
+    background-color: var(--secondary-button-color);
+}
+
+.button-background-story{
+    color: var(--primary-ondark-text-border-button);
+    border: var(--primary-ondark-text-border-button);
+    background-color: transparent;
+}
+
 .a-online{
     font-weight: bold;
 }
 
+.p-background-story{
+    color: var(--light-text-color);
+}
+
 .p-quote{
     font-style: italic;
+}
+
+.article-background-story{
+    background-color: var(--dark-background-color);
 }
 
 .button-popular-card{
