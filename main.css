@@ -59,6 +59,10 @@ button{
     font-style: italic;
 }
 
+.article-quote img{
+    border-radius: 50%;
+}
+
 .article-background-story{
     background-color: var(--dark-background-color);
 }
