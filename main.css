@@ -36,8 +36,19 @@ button{
     background-color: transparent;
 }
 
+.button-popular-card{
+    background-color: var(--primary-button-color);
+    color: var(--primary-button-text-color);
+}
+
+.button-book-and-challenges{
+    background-color: var(--primary-button-color);
+    color: var(--primary-button-text-color);
+}
+
 .a-online{
     font-weight: bold;
+    color: var(--figcaption-a-color);
 }
 
 .p-background-story{
@@ -50,10 +61,6 @@ button{
 
 .article-background-story{
     background-color: var(--dark-background-color);
-}
-
-.button-popular-card{
-    background-color: var(--primary-button-color);
 }
 
 .footer-titles{
