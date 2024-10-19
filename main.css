@@ -1,35 +1,37 @@
-:root{
-    --primary-button-color: #E3170A;
-    --primary-button-text-color: #FFFFFF;
-    --secondary-button-color: #8ACFE5;
-    --secondary-button-text-color: #011827;
-    --primary-ondark-text-border-button: #8ACFE5; 
-    --dark-text-color: #000000;
-    --light-text-color:#FFFFFF;
-    --light-background-color: #E5E5E5;
-    --dark-background-color: #011827;
-    --figcaption-a-color: #36769D;
-    background-color: var(--light-background-color);
-    font-family: "Roboto", sans-serif;
-    font-size: 40px;
-    /* margin: 0px;
+:root {
+  --primary-button-color: #e3170a;
+  --primary-button-text-color: #ffffff;
+  --secondary-button-color: #8acfe5;
+  --secondary-button-text-color: #011827;
+  --primary-ondark-text-border-button: #8acfe5;
+  --dark-text-color: #000000;
+  --light-text-color: #ffffff;
+  --light-background-color: #e5e5e5;
+  --dark-background-color: #011827;
+  --figcaption-a-color: #36769d;
+  background-color: var(--light-background-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  /* margin: 0px;
     FUNKAR INTE FÖR ATT FÅ BORT KANKTEN RUNT HELA SIDAN
     border:0px */
 }
 
-.head-figure, .figure-on-site, .figure-online{
-    margin: 0;
-    padding: 0;
+.head-figure,
+.figure-on-site,
+.figure-online {
+  margin: 0;
+  padding: 0;
 }
 
-.header{
-    background-color: var(--dark-background-color);
-    color: var(--light-text-color);
-    font-weight: bold;
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 0.3rem;
+.header {
+  background-color: var(--dark-background-color);
+  color: var(--light-text-color);
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.3rem;
 }
 
 /* .header-logo{
@@ -38,92 +40,92 @@
 } */
 
 /* FUNKAR INTE SOM JAG VILL ATT HA TEXTEN CENTRERAD MED LOGO, NU STICKER DEN UT */
-.header-text{ 
-    display: flex;
-    flex-direction: column;
-    /* gap:0; FUNKADE EJ */
+.header-text {
+  display: flex;
+  flex-direction: column;
+  /* gap:0; FUNKADE EJ */
 }
 
-header img{
-    width: 128px;
-    height: 82px;
+header img {
+  width: 128px;
+  height: 82px;
 }
 
-.img-full-widht{
-    width: 100%;
-    height: auto; 
+.img-full-widht {
+  width: 100%;
+  height: auto;
 }
 
-.head-figcaption, .aside-popular-booking{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
+.head-figcaption,
+.aside-popular-booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.h2-popular{ 
-    font-weight: normal;
-    text-align: center;
-    font-size: 0.7rem;
-} 
-
-button{
-    font-weight: bold;
-    font-family: "Roboto", sans-serif;
-    border-radius: 5px;
+.h2-popular {
+  font-weight: normal;
+  text-align: center;
+  font-size: 0.7rem;
 }
 
-.button-on-site{
-    background-color: var(--secondary-button-color);
-    min-width: 308px;
-    max-width: 308px;
-    max-height: 66px;
-    min-height: 66px;
-    font-size: 0.45rem;
+button {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
 }
 
-.button-background-story{
-    color: var(--primary-ondark-text-border-button);
-    border: 2px solid var(--primary-ondark-text-border-button);
-    background-color: transparent;
-    min-width: 308px;
-    max-width: 308px;
-    max-height: 66px;
-    min-height: 66px;
-    font-size: 0.45rem;
+.button-on-site {
+  background-color: var(--secondary-button-color);
+  min-width: 308px;
+  max-width: 308px;
+  max-height: 66px;
+  min-height: 66px;
+  font-size: 0.45rem;
 }
 
-.button-popular-card{
-    background-color: var(--primary-button-color);
-    color: var(--primary-button-text-color);
-    /* display: flex; */
-    min-width: 180px;
-    max-width: 180px;
-    max-height: 44px;
-    min-height: 44px;
-    font-size: 0.4.5rem;
-    
+.button-background-story {
+  color: var(--primary-ondark-text-border-button);
+  border: 2px solid var(--primary-ondark-text-border-button);
+  background-color: transparent;
+  min-width: 308px;
+  max-width: 308px;
+  max-height: 66px;
+  min-height: 66px;
+  font-size: 0.45rem;
 }
 
-.button-book-and-challenges{
-    background-color: var(--primary-button-color);
-    color: var(--primary-button-text-color);
-    min-width: 308px;
-    max-width: 308px;
-    max-height: 66px;
-    min-height: 66px;
-    font-size: 0.45rem;
+.button-popular-card {
+  background-color: var(--primary-button-color);
+  color: var(--primary-button-text-color);
+  /* display: flex; */
+  min-width: 180px;
+  max-width: 180px;
+  max-height: 44px;
+  min-height: 44px;
+  font-size: 0.4.5rem;
 }
 
-.a-online{
-    font-weight: bold;
-    color: var(--figcaption-a-color);
-    background-color: transparent;
-    text-decoration-line: underline;
-    font-size: 0.4rem;
+.button-book-and-challenges {
+  background-color: var(--primary-button-color);
+  color: var(--primary-button-text-color);
+  min-width: 308px;
+  max-width: 308px;
+  max-height: 66px;
+  min-height: 66px;
+  font-size: 0.45rem;
 }
 
-.p-background-story{
-    color: var(--light-text-color);
+.a-online {
+  font-weight: bold;
+  color: var(--figcaption-a-color);
+  background-color: transparent;
+  text-decoration-line: underline;
+  font-size: 0.4rem;
+}
+
+.p-background-story {
+  color: var(--light-text-color);
 }
 
 /* .article-quote{
@@ -135,86 +137,92 @@ button{
     grid-template-rows: 2fr 1.5fr 0.5fr 2fr 1.5fr 0.5fr;
 } */
 
-
-.p-quote{
-    font-style: italic;
-    font-size: 0.5rem;
+.p-quote {
+  font-style: italic;
+  font-size: 0.5rem;
 }
 
-.p-quote-date{
-    font-size: 0.4rem;
+.p-quote-date {
+  font-size: 0.4rem;
 }
 
-.article-quote img{
-    border-radius: 50%;
-    width: 20%;
-    display: inline;
+.article-quote img {
+  border-radius: 50%;
+  width: 20%;
+  display: inline;
 }
 
-.main-popular-cards{
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
+.main-popular-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-.article-card{
-    /* display: block; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    min-width: 360px;
-    max-height: 446x; 
+.article-card {
+  /* display: block; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  min-width: 360px;
+  max-height: 446x;
 }
 
-h3{
-    font-size: 0.7rem;
-    font-weight: normal;
+h3 {
+  font-size: 0.7rem;
+  font-weight: normal;
 }
 
-.article-card p{
-    font-size: 0.4rem;
+.article-card p {
+  font-size: 0.4rem;
 }
 
-.article-card h5{
-    font-size: 0.45rem;
-    font-weight: normal;
+.article-card h5 {
+  font-size: 0.45rem;
+  font-weight: normal;
 }
 
-.article-card-img{
-    border-radius: 8px;
-    width: 100%;
-    height: auto;
+.article-card-img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
 }
 
-
-.article-background-story{
-    background-color: var(--dark-background-color);
-    text-align: center;
+.article-background-story {
+  background-color: var(--dark-background-color);
+  text-align: center;
 }
 
-.article-background-story p{
-    font-size: 0.45rem;
+.article-background-story p {
+  font-size: 0.45rem;
 }
 
-.figcaption-on-site h4, .figcaption-online h4{
-    font-size: 0.6rem;
+.figcaption-on-site h4,
+.figcaption-online h4 {
+  font-size: 0.6rem;
 }
 
-.figcaption-on-site p, .figcaption-online p{
-    font-size: 0.4rem;
+.figcaption-on-site p,
+.figcaption-online p {
+  font-size: 0.4rem;
 }
 
-.footer-titles{
-    font-weight: bold;
-    
+.footer-titles {
+  font-weight: bold;
+  margin-bottom: 0.1rem;
 }
 
-footer{
-    background-color: var(--dark-background-color);
-    color: var(--light-text-color);
-    font-size: 0.35rem;
+footer {
+  background-color: var(--dark-background-color);
+  color: var(--light-text-color);
+  font-size: 0.35rem;
+  padding: 1rem 0.5rem;
 }
 
-nav{
-    display: flex;
-    flex-direction: column;
+footer p{
+    margin-top: 0.1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+
 }
