@@ -114,7 +114,9 @@ button {
   max-height: 66px;
   min-height: 66px;
   font-size: 0.45rem;
+  margin: 1.2rem 0.2rem;
 }
+
 
 .a-online {
   font-weight: bold;
@@ -198,11 +200,14 @@ h3 {
 .figcaption-on-site h4,
 .figcaption-online h4 {
   font-size: 0.6rem;
+  margin-bottom: 0.3rem;
 }
 
 .figcaption-on-site p,
 .figcaption-online p {
   font-size: 0.4rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 }
 
 .footer-titles {
@@ -215,6 +220,7 @@ footer {
   color: var(--light-text-color);
   font-size: 0.35rem;
   padding: 1rem 0.5rem;
+  margin-top: 1rem;
 }
 
 footer p{
