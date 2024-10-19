@@ -12,18 +12,46 @@
     background-color: var(--light-background-color);
     font-family: "Roboto", sans-serif;
     font-size: 40px;
-    
 }
 
-
+.head-figure, .figure-on-site, .figure-online{
+    margin: 0;
+    padding: 0;
+}
 
 .header{
     background-color: var(--dark-background-color);
     color: var(--light-text-color);
     font-weight: bold;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.3rem;
 }
 
-/* .h2-poular h2{ FUNKAR EJ ATT FÅ BORT BOLD SAMMA MED MIN H3 :/
+/* .header-logo{
+    display: flex;
+    align-items: center;
+} */
+
+/* FUNKAR INTE SOM JAG VILL ATT HA TEXTEN CENTRERAD MED LOGO, NU STICKER DEN UT */
+.header-text{ 
+    display: flex;
+    flex-direction: column;
+    /* gap:0; FUNKADE EJ */
+}
+
+header img{
+    width: 128px;
+    height: 82px;
+}
+
+.img-full-widht{
+    width: 100%;
+    height: auto; 
+}
+
+/* h2.h2-poular{ FUNKAR EJ VILL ÄVEN FÅ PÅ EN H3
     font-weight: normal;
 } */
 
@@ -35,12 +63,21 @@ button{
 
 .button-on-site{
     background-color: var(--secondary-button-color);
+    min-width: 308px;
+    max-width: 308px;
+    max-height: 66px;
+    min-height: 66px;
+    font-size: 24px;
 }
 
 .button-background-story{
     color: var(--primary-ondark-text-border-button);
     border: 2px solid var(--primary-ondark-text-border-button);
     background-color: transparent;
+    min-width: 308px;
+    max-width: 308px;
+    max-height: 66px;
+    min-height: 66px;
 }
 
 .button-popular-card{
@@ -51,6 +88,10 @@ button{
 .button-book-and-challenges{
     background-color: var(--primary-button-color);
     color: var(--primary-button-text-color);
+    min-width: 308px;
+    max-width: 308px;
+    max-height: 66px;
+    min-height: 66px;
 }
 
 .a-online{
@@ -58,11 +99,22 @@ button{
     color: var(--figcaption-a-color);
     background-color: transparent;
     text-decoration-line: underline;
+    font-size: 0.5rem;
 }
 
 .p-background-story{
     color: var(--light-text-color);
 }
+
+/* .article-quote{
+    display: flex; Bilder blev utdragen
+
+
+    display:grid; funkar inte
+    grid-template-columns: 1fr 3fr 1fr 3fr;
+    grid-template-rows: 2fr 1.5fr 0.5fr 2fr 1.5fr 0.5fr;
+} */
+
 
 .p-quote{
     font-style: italic;
@@ -70,7 +122,20 @@ button{
 
 .article-quote img{
     border-radius: 50%;
+    width: 20%;
+    display: inline;
 }
+
+.main-popular-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.article-card{
+    border-radius: 8px;
+}
+
 
 .article-background-story{
     background-color: var(--dark-background-color);
