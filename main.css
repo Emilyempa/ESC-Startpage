@@ -51,6 +51,12 @@ header img{
     height: auto; 
 }
 
+.head-figcaption, .aside-popular-booking{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
 /* h2.h2-poular{ FUNKAR EJ VILL ÄVEN FÅ PÅ EN H3
     font-weight: normal;
 } */
