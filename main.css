@@ -63,6 +63,7 @@ header img{
 .h2-popular{ 
     font-weight: normal;
     text-align: center;
+    font-size: 0.7rem;
 } 
 
 button{
@@ -135,6 +136,11 @@ button{
 
 .p-quote{
     font-style: italic;
+    font-size: 0.5rem;
+}
+
+.p-quote-date{
+    font-size: 0.4rem;
 }
 
 .article-quote img{
@@ -153,7 +159,22 @@ button{
     /* display: block; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    /* height: 350px; */
+    min-width: 360px;
+    max-height: 446x; 
+}
+
+h3{
+    font-size: 0.7rem;
+    font-weight: normal;
+}
+
+.article-card p{
+    font-size: 0.4rem;
+}
+
+.article-card h5{
+    font-size: 0.45rem;
+    font-weight: normal;
 }
 
 .article-card-img{
