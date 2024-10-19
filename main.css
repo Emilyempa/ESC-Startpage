@@ -94,7 +94,6 @@ button{
     background-color: var(--primary-button-color);
     color: var(--primary-button-text-color);
     display: flex;
-    
 }
 
 .button-book-and-challenges{
@@ -160,6 +159,7 @@ button{
 
 .article-background-story{
     background-color: var(--dark-background-color);
+    text-align: center;
 }
 
 .footer-titles{
