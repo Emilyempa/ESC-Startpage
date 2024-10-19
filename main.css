@@ -12,6 +12,9 @@
     background-color: var(--light-background-color);
     font-family: "Roboto", sans-serif;
     font-size: 40px;
+    /* margin: 0px;
+    FUNKAR INTE FÖR ATT FÅ BORT KANKTEN RUNT HELA SIDAN
+    border:0px */
 }
 
 .head-figure, .figure-on-site, .figure-online{
@@ -57,9 +60,10 @@ header img{
     align-items:center;
 }
 
-/* h2.h2-poular{ FUNKAR EJ VILL ÄVEN FÅ PÅ EN H3
+.h2-popular{ 
     font-weight: normal;
-} */
+    text-align: center;
+} 
 
 button{
     font-weight: bold;
@@ -89,6 +93,8 @@ button{
 .button-popular-card{
     background-color: var(--primary-button-color);
     color: var(--primary-button-text-color);
+    display: flex;
+    
 }
 
 .button-book-and-challenges{
@@ -139,7 +145,16 @@ button{
 }
 
 .article-card{
+    /* display: block; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    /* height: 350px; */
+}
+
+.article-card-img{
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
 }
 
 
