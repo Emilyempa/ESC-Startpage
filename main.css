@@ -130,28 +130,51 @@ button {
   color: var(--light-text-color);
 }
 
-/* .article-quote{
-    display: flex; Bilder blev utdragen
-
-
-    display:grid; funkar inte
-    grid-template-columns: 1fr 3fr 1fr 3fr;
-    grid-template-rows: 2fr 1.5fr 0.5fr 2fr 1.5fr 0.5fr;
-} */
-
-.p-quote {
-  font-style: italic;
-  font-size: 0.5rem;
+.article-quote{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 2fr;
+  gap: 10px;
 }
 
-.p-quote-date {
-  font-size: 0.4rem;
-}
-
-.article-quote img {
+.article-quote-img-1 {
   border-radius: 50%;
   width: 20%;
-  display: inline;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.article-quote-img-2 {
+  border-radius: 50%;
+  width: 20%;
+  grid-column: 4 / span 1;
+  grid-row: 1/ span 2;
+}
+
+.p-quote-1 {
+  font-style: italic;
+  font-size: 0.5rem;
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 1;
+}
+
+.p-quote-2 {
+  font-style: italic;
+  font-size: 0.5rem;
+  grid-column: 5  / span 2;
+  grid-row: 1 / span 1;
+}
+
+.p-quote-date-1 {
+  font-size: 0.4rem;
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+}
+
+.p-quote-date-2 {
+  font-size: 0.4rem;
+  grid-column: 5 / span 2;
+  grid-row: 2 / span 1;
 }
 
 .main-popular-cards {
@@ -228,7 +251,7 @@ footer p{
     margin-top: 0.1rem;
 }
 
-nav {
+footer nav {
   display: flex;
   flex-direction: column;
 
