@@ -17,7 +17,6 @@
     border:0px */
 }
 
-
 .header {
   background-color: var(--dark-background-color);
   color: var(--light-text-color);
@@ -44,7 +43,6 @@ header img {
   width: 128px;
   height: 82px;
 }
-
 
 .img-full-widht {
   width: 100%;
