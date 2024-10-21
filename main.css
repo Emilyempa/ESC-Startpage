@@ -69,9 +69,8 @@ header img {
   font-size: 0.7rem;
 }
 
-button {
+a {
   font-weight: bold;
-  font-family: "Roboto", sans-serif;
   border-radius: 5px;
 }
 
@@ -83,14 +82,12 @@ button {
   min-height: 66px;
   font-size: 0.6rem;
   margin-top: 0.7rem;
-  font-weight: bold;
-  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.button-background-story {
+.a-background-story{
   color: var(--primary-ondark-text-border-button);
   border: 2px solid var(--primary-ondark-text-border-button);
   background-color: transparent;
@@ -98,11 +95,11 @@ button {
   max-width: 308px;
   max-height: 66px;
   min-height: 66px;
-  font-size: 0.45rem;
+  font-size: 0.2rem;
   margin-bottom: 1.5rem;
 }
 
-.button-popular-card {
+.a-popular-card {
   background-color: var(--primary-button-color);
   color: var(--primary-button-text-color);
   /* display: flex; */
@@ -113,7 +110,7 @@ button {
   font-size: 0.4.5rem;
 }
 
-.button-book-and-challenges {
+.a-book-and-challenges {
   background-color: var(--primary-button-color);
   color: var(--primary-button-text-color);
   min-width: 308px;
