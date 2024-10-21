@@ -12,9 +12,8 @@
   background-color: var(--light-background-color);
   font-family: "Roboto", sans-serif;
   font-size: 40px;
-  /* margin: 0px;
-    FUNKAR INTE FÖR ATT FÅ BORT KANKTEN RUNT HELA SIDAN
-    border:0px */
+  margin: 0 auto;
+  /* eventuellt ta bort margin, kolla flexbox på button först */
 }
 
 .header {
@@ -131,7 +130,7 @@ button {
 
 .article-quote {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 2fr;
   gap: 10px;
 }
@@ -146,14 +145,14 @@ button {
 .article-quote-img-2 {
   border-radius: 50%;
   width: 100%;
-  grid-column: 4 / span 1;
+  grid-column: 6 / span 1;
   grid-row: 1 / span 2;
 }
 
 .p-quote-1 {
   font-style: italic;
   font-size: 0.3rem;
-  grid-column: 2 / span 2;
+  grid-column: 2 / span 4;
   grid-row: 1 / span 1;
   margin: 0;
 }
@@ -161,20 +160,20 @@ button {
 .p-quote-2 {
   font-style: italic;
   font-size: 0.3rem;
-  grid-column: 5 / span 2;
+  grid-column: 7 / span 4;
   grid-row: 1 / span 1;
   margin: 0;
 }
 
 .p-quote-date-1 {
   font-size: 0.2rem;
-  grid-column: 2 / span 2;
+  grid-column: 2 / span 4;
   grid-row: 2 / span 1;
 }
 
 .p-quote-date-2 {
   font-size: 0.2rem;
-  grid-column: 5 / span 2;
+  grid-column: 7 / span 4;
   grid-row: 2 / span 1;
 }
 
