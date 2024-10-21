@@ -21,6 +21,7 @@
   color: var(--light-text-color);
   font-weight: bold;
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   font-size: 0.3rem;
@@ -32,7 +33,7 @@
 } */
 
 /* FUNKAR INTE SOM JAG VILL ATT HA TEXTEN CENTRERAD MED LOGO, NU STICKER DEN UT */
-.header-text {
+.header-text{
   display: flex;
   flex-direction: column;
   /* gap:0; FUNKADE EJ */
@@ -181,11 +182,13 @@ button {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  overflow-x: hidden;
+  margin-left: 0.5rem;
 }
 
 .article-card {
   display: block;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   min-width: 360px;
   /* max-height: 446x; Tar ej denna kodrad */
