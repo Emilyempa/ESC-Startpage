@@ -75,14 +75,19 @@ button {
   border-radius: 5px;
 }
 
-.button-on-site {
+.a-on-site {
   background-color: var(--secondary-button-color);
   min-width: 308px;
   max-width: 308px;
   max-height: 66px;
   min-height: 66px;
-  font-size: 0.45rem;
+  font-size: 0.6rem;
   margin-top: 0.7rem;
+  font-weight: bold;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-background-story {
