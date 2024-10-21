@@ -12,8 +12,7 @@
   background-color: var(--light-background-color);
   font-family: "Roboto", sans-serif;
   font-size: 40px;
-  margin: 0 auto;
-  /* eventuellt ta bort margin, kolla flexbox på button först */
+  /* margin: 0 auto; */
 }
 
 .header {
@@ -27,16 +26,8 @@
   font-size: 0.3rem;
 }
 
-/* .header-logo{
-    display: flex;
-    align-items: center;
-} */
-
-/* FUNKAR INTE SOM JAG VILL ATT HA TEXTEN CENTRERAD MED LOGO, NU STICKER DEN UT */
-.header-text{
-  display: flex;
-  flex-direction: column;
-  /* gap:0; FUNKADE EJ */
+.header-text {
+  width: 90px;
 }
 
 header img {
@@ -87,7 +78,7 @@ a {
   align-items: center;
 }
 
-.a-background-story{
+.a-background-story {
   color: var(--primary-ondark-text-border-button);
   border: 2px solid var(--primary-ondark-text-border-button);
   background-color: transparent;
@@ -95,7 +86,7 @@ a {
   max-width: 308px;
   max-height: 66px;
   min-height: 66px;
-  font-size: 0.5rem;
+  font-size: 0.45rem;
   margin-bottom: 1.5rem;
   display: flex;
   justify-content: center;
@@ -114,6 +105,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  left: 170px;
+  bottom: 10px;
 }
 
 .a-book-and-challenges {
@@ -124,7 +118,9 @@ a {
   max-height: 66px;
   min-height: 66px;
   font-size: 0.45rem;
-  margin: 1.2rem 0.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  margin-left: 0.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,7 +235,7 @@ h3 {
 
 .p-background-story {
   color: var(--light-text-color);
-  font-size: 0.45rem;
+  font-size: 0.5rem;
   padding: 1.5rem 1rem 0.5rem 1rem;
 }
 
