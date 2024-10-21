@@ -197,31 +197,38 @@ a {
 }
 
 .article-card {
-  display: block;
+  /* display: block; */
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   min-width: 360px;
   /* max-height: 446x; Tar ej denna kodrad */
 }
 
-h3 {
+.article-card-imgstar-and-p{
+  display: flex;
+  align-items: center;
+}
+
+.article-card h3 {
   font-size: 0.7rem;
   font-weight: normal;
+  margin-bottom: 0;
 }
 
 .article-card p {
   font-size: 0.4rem;
-}
-
-.article-card h5 {
-  font-size: 0.45rem;
-  font-weight: normal;
+  margin-left: 0.4rem;
 }
 
 .article-card-img {
   border-radius: 8px;
   width: 100%;
   height: auto;
+}
+
+.article-card-imgstar{
+  width: 20px;
+  height: 20px;
 }
 
 .article-background-story {
