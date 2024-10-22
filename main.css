@@ -89,7 +89,7 @@ a {
   max-width: 308px;
   max-height: 66px;
   min-height: 66px;
-  font-size: 0.45rem;
+  font-size: 0.6rem;
   margin-bottom: 1.5rem;
   display: flex;
   justify-content: center;
@@ -120,7 +120,7 @@ a {
   max-width: 308px;
   max-height: 66px;
   min-height: 66px;
-  font-size: 0.45rem;
+  font-size: 0.6rem;
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
   margin-left: 0.2rem;
@@ -259,7 +259,7 @@ a {
 
 .p-background-story {
   color: var(--light-text-color);
-  font-size: 0.5rem;
+  font-size: 0.55rem;
   padding: 1.5rem 1rem 0.5rem 1rem;
 }
 
@@ -272,7 +272,7 @@ a {
 
 .figcaption-on-site p,
 .figcaption-online p {
-  font-size: 0.4rem;
+  font-size: 0.55rem;
   margin-top: 0rem;
   margin-bottom: 0rem;
 }
@@ -281,6 +281,7 @@ a {
   font-weight: bold;
   margin-bottom: 0.1rem;
 }
+
 
 footer {
   background-color: var(--dark-background-color);
@@ -338,10 +339,10 @@ footer nav {
     height: 15px;
   }
   .figure-img {
-    width: 100%;
+    /* width: 100%; Eventuellt endast på översta bilden */
     height: 350px;
   }
-  .figcaption-top{
+  .figcaption-top, .aside-popular-booking{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -354,7 +355,7 @@ footer nav {
     text-decoration-line: none;
     font-size: 0.6rem;
     margin-bottom: 0.5rem;
-    margin-top: 0; 
+    margin-top: 0.3rem; 
     margin-left: 0.5rem;
     max-width: 308px;
     min-width: 275px;
@@ -365,9 +366,12 @@ footer nav {
     align-items: center;
   }
   .a-on-site{
-    margin-top:0;
+    margin-top:0.3rem;
     margin-bottom: 0.5rem;
     min-width: 275px;
-  }
-
+  /* }
+  .p-background-story{
+    font-size: 0.7rem;
+  } */
+  
 }
