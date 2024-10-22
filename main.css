@@ -41,6 +41,8 @@ header img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  margin: 0;
+  padding: 0;
 }
 
 .figure-top,
@@ -205,11 +207,11 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
   min-width: 360px;
-  
+
   /* max-height: 446x; Tar ej denna kodrad */
 }
 
-.article-card-imgstar-and-p{
+.article-card-imgstar-and-p {
   display: flex;
   align-items: center;
   margin-left: 0.5rem;
@@ -227,7 +229,7 @@ a {
   margin-left: 0.4rem;
 }
 
-.p2-popular-card{
+.p2-popular-card {
   font-size: 0.55rem;
   margin-top: 0;
   margin-left: 0.5rem;
@@ -239,7 +241,7 @@ a {
   height: auto;
 }
 
-.article-card-imgstar{
+.article-card-imgstar {
   width: 20px;
   height: 20px;
 }
@@ -282,7 +284,6 @@ a {
   margin-bottom: 0.1rem;
 }
 
-
 footer {
   background-color: var(--dark-background-color);
   color: var(--light-text-color);
@@ -308,8 +309,8 @@ footer nav {
   }
 }
 
-@media screen and (max-width: 1200px) and (min-width:600px) {
-   .p-quote-1 {
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+  .p-quote-1 {
     grid-column: 3 / span 3;
     grid-row: 1 / span 1;
   }
@@ -325,7 +326,8 @@ footer nav {
     grid-column: 8 / span 3;
     grid-row: 2 / span 1;
   }
-  .article-quote-img-1, .article-quote-img-2 {
+  .article-quote-img-1,
+  .article-quote-img-2 {
     width: 70%;
   }
   .header-text {
@@ -334,15 +336,16 @@ footer nav {
     /* margin-top: 0;
     margin-bottom: 0; */
   }
-  .article-card-imgstar{
+  .article-card-imgstar {
     width: 15px;
     height: 15px;
   }
   .figure-img {
-    /* width: 100%; Eventuellt endast på översta bilden */
+    /* width: 100%; Eventuellt height endast på översta bilden */
     height: 350px;
   }
-  .figcaption-top, .aside-popular-booking{
+  .figcaption-top,
+  .aside-popular-booking {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -355,7 +358,7 @@ footer nav {
     text-decoration-line: none;
     font-size: 0.6rem;
     margin-bottom: 0.5rem;
-    margin-top: 0.3rem; 
+    margin-top: 0.3rem;
     margin-left: 0.5rem;
     max-width: 308px;
     min-width: 275px;
@@ -365,13 +368,26 @@ footer nav {
     justify-content: center;
     align-items: center;
   }
-  .a-on-site{
-    margin-top:0.3rem;
+  .a-on-site {
+    margin-top: 0.3rem;
     margin-bottom: 0.5rem;
     min-width: 275px;
-  /* }
-  .p-background-story{
-    font-size: 0.7rem;
+  }
+  .article-online{
+    display:flex;
+  } 
+  .figure-img-online{
+    min-width: 250px;
+  }
+
+  .figcaption-on-site h4,
+  .figcaption-online h4 ,
+  .figcaption-on-site p,
+ .figcaption-online p {
+  margin-left: 0.3rem;
+}
+/* 
+  .figure-img-online{
+    order: 2; FUNKAR INTE DÅ DET INTE ÄR ETT DIREKT BARN
   } */
-  
 }
