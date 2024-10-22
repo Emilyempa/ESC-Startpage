@@ -386,6 +386,10 @@ footer nav {
  .figcaption-online p {
   margin-left: 0.3rem;
 }
+
+.footer-titles-p{
+  width: 550px;
+}
 /* 
   .figure-img-online{
     order: 2; FUNKAR INTE DÅ DET INTE ÄR ETT DIREKT BARN
