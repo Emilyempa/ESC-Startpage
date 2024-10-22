@@ -37,19 +37,20 @@ header img {
   margin-left: 0.5rem;
 }
 
-.img-full-widht {
+.figure-img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
-.head-figure,
+.figure-top,
 .figure-on-site,
 .figure-online {
   margin: 0;
   padding: 0;
 }
 
-.head-figcaption,
+.figcaption-top,
 .aside-popular-booking {
   display: flex;
   flex-direction: column;
@@ -140,7 +141,7 @@ a {
 
 .article-quote {
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 2fr;
   gap: 10px;
   margin-right: 1rem;
@@ -185,9 +186,10 @@ a {
 }
 
 .p-quote-date-2 {
-  font-size: 0.3rem;
+  font-size: 0.4rem;
   grid-column: 8 / span 7;
   grid-row: 2 / span 1;
+  margin-top: 2px;
 }
 
 .main-popular-cards {
@@ -200,21 +202,24 @@ a {
 
 .article-card {
   /* display: block; */
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
   min-width: 360px;
+  
   /* max-height: 446x; Tar ej denna kodrad */
 }
 
 .article-card-imgstar-and-p{
   display: flex;
   align-items: center;
+  margin-left: 0.5rem;
 }
 
 .article-card h3 {
   font-size: 0.7rem;
   font-weight: normal;
   margin-bottom: 0;
+  margin-left: 0.5rem;
 }
 
 .p1-popular-card {
@@ -225,6 +230,7 @@ a {
 .p2-popular-card{
   font-size: 0.55rem;
   margin-top: 0;
+  margin-left: 0.5rem;
 }
 
 .article-card-img {
@@ -237,6 +243,10 @@ a {
   width: 20px;
   height: 20px;
 }
+
+/* .aside-popular-booking{
+  border-collapse: separate;
+} */
 
 .article-background-story {
   background-color: var(--dark-background-color);
@@ -298,6 +308,9 @@ footer nav {
 }
 
 @media screen and (max-width: 1200px) and (min-width:600px) {
+  .article-quote {
+    margin-right: 0.5rem;
+  }
   .p-quote-1 {
     grid-column: 3 / span 3;
     grid-row: 1 / span 1;
@@ -306,14 +319,30 @@ footer nav {
     grid-column: 3 / span 3;
     grid-row: 2 / span 1;
   }
+  .p-quote-2 {
+    grid-column: 8 / span 3;
+    grid-row: 1 / span 1;
+  }
+  .p-quote-date-2 {
+    grid-column: 8 / span 3;
+    grid-row: 2 / span 1;
+  }
   .article-quote-img-1, .article-quote-img-2 {
     width: 70%;
   }
   .header-text {
     width: 500px;
     font-size: 0.5rem;
-    margin-top: 0;
-    margin-bottom: 0;
+    /* margin-top: 0;
+    margin-bottom: 0; */
+  }
+  .article-card-imgstar{
+    width: 15px;
+    height: 15px;
+  }
+  .figure-img {
+    width: 100%;
+    height: 350px;
   }
 
 }
