@@ -322,6 +322,11 @@ footer nav {
     margin-bottom: 0; */
   }
 
+  .figcaption-top {
+    position: relative;
+    top: -50px;
+  }
+
   .p-quote-1 {
     grid-column: 3 / span 3;
     grid-row: 1 / span 1;
@@ -379,16 +384,41 @@ footer nav {
     margin-bottom: 0.5rem;
     min-width: 275px;
   }
+  .main-popular-cards {
+    margin-left: 0;
+  }
   .p-background-story {
     width: 500px;
   }
-  .article-online {
-    display: flex;
+
+  .main-booking-online-and-onsite{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat( 2, 2fr);
+    gap: 20px;
   }
-  .figure-img-online {
-    min-width: 250px;
+  .figure-on-site{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
   }
 
+  .figcaption-on-site{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .figcaption-online{
+    
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .figure-online{
+    
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+ 
   .figcaption-on-site h4,
   .figcaption-online h4,
   .figcaption-on-site p,
@@ -477,7 +507,46 @@ footer nav {
     top: -50px;
   }
 
+  .h2-popular{
+    font-size: 1rem;
+  }
+
+  .main-popular-cards {
+    margin-left: 0;
+  }
+
   .p-background-story {
     width: 500px;
   }
+  .a-background-story{
+    margin-bottom: 2.5rem;
+  }
+  .main-booking-online-and-onsite{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat( 2, 2fr);
+    gap: 20px;
+  }
+  .figure-on-site{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .figcaption-on-site{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .figcaption-online{
+    
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .figure-online{
+    
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+
 }
