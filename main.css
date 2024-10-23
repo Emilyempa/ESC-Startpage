@@ -304,9 +304,12 @@ footer nav {
 @media screen and (max-width: 600px) {
   .article-quote-img-2,
   .p-quote-2,
-  .p-quote-date-2 {
+  .p-quote-date-2,
+  .header-nav {
     display: none;
   }
+
+
 }
 
 @media screen and (max-width: 1200px) and (min-width: 600px) {
