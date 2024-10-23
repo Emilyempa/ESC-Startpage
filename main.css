@@ -391,34 +391,32 @@ footer nav {
     width: 500px;
   }
 
-  .main-booking-online-and-onsite{
+  .main-booking-online-and-onsite {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat( 2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
     gap: 20px;
   }
-  .figure-on-site{
+  .figure-on-site {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
   }
 
-  .figcaption-on-site{
+  .figcaption-on-site {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
   }
 
-  .figcaption-online{
-    
+  .figcaption-online {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
   }
 
-  .figure-online{
-    
+  .figure-online {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
   }
- 
+
   .figcaption-on-site h4,
   .figcaption-online h4,
   .figcaption-on-site p,
@@ -426,17 +424,13 @@ footer nav {
     margin-left: 0.3rem;
   }
 
-  .a-book-and-challenges{
+  .a-book-and-challenges {
     min-width: 230px;
   }
 
   .footer-titles-p {
     width: 550px;
   }
-  /* 
-  .figure-img-online{
-    order: 2; FUNKAR INTE DÅ DET INTE ÄR ETT DIREKT BARN
-  } */
 }
 
 @media screen and (min-width: 1200px) {
@@ -511,56 +505,62 @@ footer nav {
     top: -50px;
   }
 
-  .h2-popular{
+  .h2-popular {
     font-size: 1rem;
   }
 
   .main-popular-cards {
-    margin-left: 0;
+    margin-left: 4%;
+    margin-right: 4%;
   }
 
   .p-background-story {
     width: 500px;
   }
-  .a-background-story{
+  .a-background-story {
     margin-bottom: 2.5rem;
   }
-  .main-booking-online-and-onsite{
+  .main-booking-online-and-onsite {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat( 2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
     gap: 20px;
   }
-  .figure-on-site{
+  .figure-on-site {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
   }
 
-  .figcaption-on-site{
+  .figcaption-on-site {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
     align-self: center;
-    margin-left:20%;
-    margin-right:20%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 
-  .figcaption-online{
-    
+  .figcaption-online {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
     align-self: center;
-    margin-left:20%;
-    margin-right:20%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
-  .figcaption-online h4, .figcaption-on-site h4{
+  .figcaption-online h4,
+  .figcaption-on-site h4 {
     font-size: 0.8rem;
   }
 
-
-  .figure-online{
-    
+  .figure-online {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
   }
-
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2.5rem;
+  }
+  .footer-section {
+    width: 500px;
+  }
 }
