@@ -14,7 +14,7 @@
   font-size: 40px;
   /* margin: 0 auto; */
 }
-
+ /* header below */
 .header {
   background-color: var(--dark-background-color);
   color: var(--light-text-color);
@@ -29,14 +29,14 @@
 .header-text {
   width: 130px;
   margin: 0.2rem;
-}
+ }
 
 header img {
   width: 128px;
   height: 82px;
   margin-left: 0.5rem;
 }
-
+/* top figure and figcaption below */
 .figure-img {
   width: 100%;
   height: auto;
@@ -65,7 +65,7 @@ header img {
   font-size: 0.7rem;
 }
 
-/* all a items below */
+/* all a elements below */
 
 a {
   font-weight: bold;
@@ -204,6 +204,7 @@ a {
   gap: 1rem;
   overflow-x: hidden;
   margin-left: 0.5rem;
+  /* margin-bottom: 1.5rem; */
   /* flex-basis: 100%; */
   /* border-collapse: separate; */
 }
@@ -258,6 +259,7 @@ a {
    flex-basis: 100%; 
 } */
 
+/* background story below */
 .article-background-story {
   background-color: var(--dark-background-color);
   text-align: center;
@@ -272,7 +274,7 @@ a {
   font-size: 0.55rem;
   padding: 1.5rem 1rem 0.5rem 1rem;
 }
-
+/* main booking online and onsite below */
 .figcaption-on-site h4,
 .figcaption-online h4 {
   font-size: 0.6rem;
@@ -286,7 +288,7 @@ a {
   margin-top: 0rem;
   margin-bottom: 0rem;
 }
-
+/* footer below */
 .footer-titles {
   font-weight: bold;
   margin-bottom: 0.1rem;
@@ -309,7 +311,7 @@ footer nav {
   flex-direction: column;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .article-quote-img-2,
   .p-quote-2,
   .p-quote-date-2,
@@ -318,7 +320,7 @@ footer nav {
   }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 600px) {
+@media screen and (min-width: 640px) and (max-width: 1200px) {
   .nav-header {
     display: none;
   }
@@ -354,7 +356,11 @@ footer nav {
   .article-quote-img-2 {
     width: 70%;
   }
-
+  .main-popular-cards {
+    overflow-x: scroll;
+    margin-left: 0;
+    gap: 0.5rem;
+  }
   .article-card-imgstar {
     width: 15px;
     height: 15px;
@@ -398,6 +404,7 @@ footer nav {
     width: 500px;
   }
 
+  /* main booking online and onsite below */
   .main-booking-online-and-onsite {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -441,9 +448,12 @@ footer nav {
 }
 
 @media screen and (min-width: 1200px) {
+  /* header below */
   .header-text {
     width: 600px;
     font-size: 0.5rem;
+    position: relative;
+    top: 0.4rem;
   }
   .nav-header {
     display: flex;
@@ -453,13 +463,30 @@ footer nav {
     color: var(--light-text-color);
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.6rem;
   }
   .nav-header-a-contact{
     color: var(--secondary-button-color)
   }
+  /* figure top and figcation below */
   .figure-img-top {
     height: 460px;
   }
+  .figcaption-top,
+  .aside-popular-booking {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .figcaption-top {
+    position: relative;
+    top: -50px;
+  }
+
+  /* quote below */
   .p-quote-1 {
     grid-column: 3 / span 3;
     grid-row: 1 / span 1;
@@ -486,6 +513,8 @@ footer nav {
     grid-column: 6 / span 1;
     grid-row: 1 / span 2;
   }
+
+  /* a elements below */
   .a-online {
     font-weight: bold;
     color: var(--primary-button-text-color);
@@ -503,23 +532,12 @@ footer nav {
     justify-content: center;
     align-items: center;
   }
-  .figcaption-top,
-  .aside-popular-booking {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
   .a-on-site {
     margin-top: 0.3rem;
     margin-bottom: 0.5rem;
   }
 
-  .figcaption-top {
-    position: relative;
-    top: -50px;
-  }
-
+  /* cards below */
   .h2-popular {
     font-size: 1rem;
   }
@@ -528,13 +546,15 @@ footer nav {
     margin-left: 4%;
     margin-right: 4%;
   }
-
+  /* background story below */
   .p-background-story {
     width: 500px;
   }
   .a-background-story {
     margin-bottom: 2.5rem;
   }
+
+  /* main booking online and onsite below */
   .main-booking-online-and-onsite {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -570,6 +590,7 @@ footer nav {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
   }
+  /* footer below */
   .footer {
     display: flex;
     justify-content: space-evenly;
