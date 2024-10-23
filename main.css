@@ -426,6 +426,10 @@ footer nav {
     margin-left: 0.3rem;
   }
 
+  .a-book-and-challenges{
+    min-width: 230px;
+  }
+
   .footer-titles-p {
     width: 550px;
   }
@@ -535,13 +539,23 @@ footer nav {
   .figcaption-on-site{
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
+    align-self: center;
+    margin-left:20%;
+    margin-right:20%;
   }
 
   .figcaption-online{
     
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
+    align-self: center;
+    margin-left:20%;
+    margin-right:20%;
   }
+  .figcaption-online h4, .figcaption-on-site h4{
+    font-size: 0.8rem;
+  }
+
 
   .figure-online{
     
