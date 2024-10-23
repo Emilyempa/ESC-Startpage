@@ -438,6 +438,38 @@ footer nav {
     grid-column: 6 / span 1;
     grid-row: 1 / span 2;
   }
+  .a-online {
+    font-weight: bold;
+    color: var(--primary-button-text-color);
+    background-color: var(--primary-button-color);
+    text-decoration-line: none;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.3rem;
+    margin-left: 0.5rem;
+    max-width: 308px;
+    min-width: 308px;
+    max-height: 66px;
+    min-height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .figcaption-top,
+  .aside-popular-booking {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .a-on-site {
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+  }
 
+  .figcaption-top{
+    position:relative;
+    top: -50px;
+  }
 
 }
