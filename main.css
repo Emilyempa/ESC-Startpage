@@ -200,6 +200,7 @@ a {
   gap: 1rem;
   overflow-x: hidden;
   margin-left: 0.5rem;
+  /* border-collapse: separate; */
 }
 
 .article-card {
@@ -308,15 +309,19 @@ footer nav {
   .header-nav {
     display: none;
   }
-
-
 }
 
 @media screen and (max-width: 1200px) and (min-width: 600px) {
   .header-nav {
     display: none;
   }
-  
+  .header-text {
+    width: 500px;
+    font-size: 0.5rem;
+    /* margin-top: 0;
+    margin-bottom: 0; */
+  }
+
   .p-quote-1 {
     grid-column: 3 / span 3;
     grid-row: 1 / span 1;
@@ -337,18 +342,12 @@ footer nav {
   .article-quote-img-2 {
     width: 70%;
   }
-  .header-text {
-    width: 500px;
-    font-size: 0.5rem;
-    /* margin-top: 0;
-    margin-bottom: 0; */
-  }
+
   .article-card-imgstar {
     width: 15px;
     height: 15px;
   }
   .figure-img {
-    
     height: 350px;
   }
   .figcaption-top,
@@ -380,37 +379,43 @@ footer nav {
     margin-bottom: 0.5rem;
     min-width: 275px;
   }
-  .article-online{
-    display:flex;
-  } 
-  .figure-img-online{
+  .p-background-story {
+    width: 500px;
+  }
+  .article-online {
+    display: flex;
+  }
+  .figure-img-online {
     min-width: 250px;
   }
 
   .figcaption-on-site h4,
-  .figcaption-online h4 ,
+  .figcaption-online h4,
   .figcaption-on-site p,
- .figcaption-online p {
-  margin-left: 0.3rem;
-}
+  .figcaption-online p {
+    margin-left: 0.3rem;
+  }
 
-.footer-titles-p{
-  width: 550px;
-}
-/* 
+  .footer-titles-p {
+    width: 550px;
+  }
+  /* 
   .figure-img-online{
     order: 2; FUNKAR INTE DÅ DET INTE ÄR ETT DIREKT BARN
   } */
 }
 
-@media screen and (min-width: 1200px){
-  .header-text{
+@media screen and (min-width: 1200px) {
+  .header-text {
     width: 600px;
     font-size: 0.5rem;
   }
-  .header-nav{
+  .header-nav {
     display: flex;
     justify-content: center;
+  }
+  .figure-img-top {
+    height: 460px;
   }
   .p-quote-1 {
     grid-column: 3 / span 3;
@@ -433,7 +438,7 @@ footer nav {
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
   }
-  .article-quote-img-2{
+  .article-quote-img-2 {
     width: 60%;
     grid-column: 6 / span 1;
     grid-row: 1 / span 2;
@@ -467,9 +472,12 @@ footer nav {
     margin-bottom: 0.5rem;
   }
 
-  .figcaption-top{
-    position:relative;
+  .figcaption-top {
+    position: relative;
     top: -50px;
   }
 
+  .p-background-story {
+    width: 500px;
+  }
 }
