@@ -549,7 +549,6 @@ footer nav {
     font-size: 0.6rem;
     margin-bottom: 0.5rem;
     margin-top: 0.3rem;
-    margin-left: 0.5rem;
     max-width: 308px;
     min-width: 308px;
     max-height: 66px;
@@ -561,6 +560,8 @@ footer nav {
   .a-on-site {
     margin-top: 0.3rem;
     margin-bottom: 0.5rem;
+    order:1;
+    margin-left: 0.5rem;
   }
 
   .a-book-and-challenges {
