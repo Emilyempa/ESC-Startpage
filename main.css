@@ -226,6 +226,7 @@ a {
   font-weight: normal;
   margin-bottom: 0;
   margin-left: 0.5rem;
+  margin-top: 0;
 }
 
 .p1-popular-card {
@@ -247,8 +248,9 @@ a {
 }
 
 .article-card-imgstar {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
+  padding-right: 0.3rem;
 }
 
 .aside-popular-booking {
@@ -589,7 +591,7 @@ footer nav {
 
   .p1-popular-card {
     font-size: 0.4rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
   }
 
   /* background story below */
