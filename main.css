@@ -218,7 +218,6 @@ a {
 
 .article-card-imgstar-and-p {
   display: flex;
-  align-items: center;
   margin-left: 0.5rem;
 }
 
@@ -232,6 +231,7 @@ a {
 .p1-popular-card {
   font-size: 0.5rem;
   margin-left: 0.4rem;
+  margin-top: 0;
 }
 
 .p2-popular-card {
@@ -590,9 +590,6 @@ footer nav {
   .p1-popular-card {
     font-size: 0.4rem;
     margin-left: 3rem;
-  }
-  .p2-popular-card {
-    font-size: 0.5rem;
   }
 
   /* background story below */
