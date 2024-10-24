@@ -315,6 +315,7 @@ footer nav {
 } 
 
 @media screen and (max-width: 640px) {
+  /* quote below */
   .article-quote-img-2,
   .p-quote-2,
   .p-quote-date-2,
@@ -331,13 +332,22 @@ footer nav {
   .header-text {
     width: 500px;
     font-size: 0.5rem;
-    /* margin-top: 0;
-    margin-bottom: 0; */
-  }
-
+    }
+    
+  /* top figure and figcaption below */
   .figcaption-top {
     position: relative;
     top: -50px;
+  }
+  .figure-img {
+    height: 350px;
+  }
+  .figcaption-top,
+  .aside-popular-booking {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   /* quote below */
   .p-quote-1 {
@@ -374,17 +384,6 @@ footer nav {
   }
   .p1-popular-card{
     font-size: 0.4rem;
-  }
-
-  .figure-img {
-    height: 350px;
-  }
-  .figcaption-top,
-  .aside-popular-booking {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
   }
 
   /* a elements below */
