@@ -650,7 +650,7 @@ footer nav {
   /* footer below */
   .footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 2.5rem;
   }
   .footer-section {
