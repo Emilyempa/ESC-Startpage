@@ -307,6 +307,12 @@ footer nav {
   display: flex;
   flex-direction: column;
 }
+.footer-nav-1{
+  margin-bottom: 0.7rem;
+}
+.footer-nav-a{
+  font-weight: normal;
+} 
 
 @media screen and (max-width: 640px) {
   .article-quote-img-2,
@@ -317,7 +323,7 @@ footer nav {
   }
 }
 
-@media screen and (min-width: 640px) and (max-width: 1200px) {
+@media screen and (min-width: 640px) and (max-width: 1280px) {
   /* header below */
   .nav-header {
     display: none;
@@ -337,6 +343,7 @@ footer nav {
   .p-quote-1 {
     grid-column: 3 / span 3;
     grid-row: 1 / span 1;
+    
   }
   .p-quote-date-1 {
     grid-column: 3 / span 3;
@@ -352,7 +359,7 @@ footer nav {
   }
   .article-quote-img-1,
   .article-quote-img-2 {
-    width: 70%;
+    width: 60%;
   }
   /* cards below */
   .main-popular-cards {
@@ -363,7 +370,10 @@ footer nav {
   .article-card-imgstar {
     width: 15px;
     height: 15px;
-    margin-bottom: 0.5rem;
+    
+  }
+  .p1-popular-card{
+    font-size: 0.4rem;
   }
 
   .figure-img {
@@ -400,7 +410,11 @@ footer nav {
     margin-bottom: 0.5rem;
     min-width: 275px;
   }
+  .a-book-and-challenges {
+    min-width: 150px;
+  }
 
+  /* background story below */
   .p-background-story {
     width: 500px;
   }
@@ -420,12 +434,13 @@ footer nav {
   .figcaption-on-site {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
-    
+    align-self: center;
   }
 
   .figcaption-online {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
+    align-self: center;
   }
 
   .figure-online {
@@ -444,16 +459,14 @@ footer nav {
     margin-left: 0.3rem;
   }
 
-  .a-book-and-challenges {
-    min-width: 230px;
-  }
 
+  /* footer below */
   .footer-titles-p {
     width: 550px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   /* header below */
   .header-text {
     width: 600px;
@@ -490,6 +503,7 @@ footer nav {
   .figcaption-top {
     position: relative;
     top: -50px;
+    margin-bottom: 1rem;
   }
   .h2-popular {
     margin-bottom: 2rem;
@@ -497,29 +511,34 @@ footer nav {
   }
 
   /* quote below */
-  .p-quote-1 {
+    .p-quote-1 {
     grid-column: 3 / span 3;
     grid-row: 1 / span 1;
+    font-size: 0.6rem;
   }
   .p-quote-date-1 {
     grid-column: 3 / span 3;
     grid-row: 2 / span 1;
+    font-size: 0.55rem;
+
   }
   .p-quote-2 {
     grid-column: 7 / span 3;
     grid-row: 1 / span 1;
+    font-size: 0.6rem;
   }
   .p-quote-date-2 {
     grid-column: 7 / span 3;
     grid-row: 2 / span 1;
+    font-size: 0.55rem;
   }
   .article-quote-img-1 {
-    width: 70%;
+    width: 80%;
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
   }
   .article-quote-img-2 {
-    width: 70%;
+    width: 80%;
     grid-column: 6 / span 1;
     grid-row: 1 / span 2;
   }
@@ -547,9 +566,38 @@ footer nav {
     margin-bottom: 0.5rem;
   }
 
+  .a-book-and-challenges{
+    margin-left: 0rem;
+  }
+
   /* cards below */
   .h2-popular {
     font-size: 1rem;
+  }
+
+  .main-popular-cards{
+    justify-content: space-evenly;
+    gap: 0rem; 
+    margin-left:0;
+  } 
+
+  .article-card{
+    max-width: 365px;
+    min-width: 363px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .article-card-imgstar {
+    width: 15px;
+    height: 15px;
+  }
+
+  .p1-popular-card{
+    font-size: 0.4rem;
+    margin-left:3rem;
+  }
+  .p2-popular-card{
+    font-size: 0.5rem;
   }
 
   /* background story below */
@@ -566,6 +614,7 @@ footer nav {
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(2, 2fr);
     gap: 0;
+    margin-bottom: 4rem;
   }
   .figure-on-site {
     grid-column: 1 / span 1;
@@ -611,5 +660,8 @@ footer nav {
   }
   .footer-section {
     width: 500px;
+  }
+  .footer-titles{
+    margin-bottom: 0.3rem;
   }
 }
