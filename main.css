@@ -12,7 +12,7 @@
   background-color: var(--light-background-color);
   font-family: "Roboto", sans-serif;
   font-size: 40px;
-  /* margin: 0 auto; */
+  
 }
 /* header below */
 .header {
@@ -271,6 +271,7 @@ a {
   font-size: 0.55rem;
   padding: 1.5rem 1rem 0.5rem 1rem;
 }
+
 /* main booking online and onsite below */
 .figcaption-on-site h4,
 .figcaption-online h4 {
@@ -285,6 +286,7 @@ a {
   margin-top: 0rem;
   margin-bottom: 0rem;
 }
+
 /* footer below */
 .footer-titles {
   font-weight: bold;
@@ -349,7 +351,7 @@ footer nav {
     align-items: center;
   }
 
-    /* a elements below */
+  /* a elements below */
   .a-online {
       font-weight: bold;
       color: var(--primary-button-text-color);
@@ -367,17 +369,17 @@ footer nav {
       justify-content: center;
       align-items: center;
     }
-    .a-on-site {
-      margin-top: 0.3rem;
-      margin-bottom: 0.5rem;
-      min-width: 275px;
-    }
-    .a-book-and-challenges {
-      min-width: 150px;
-    }
-    .figcaption-a{
-      margin-bottom: 0.5rem;
-    }
+  .a-on-site {
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+    min-width: 275px;
+  }
+  .a-book-and-challenges {
+    min-width: 150px;
+  }
+  .figcaption-a{
+    margin-bottom: 0.5rem;
+  }  
   
   /* quote below */
   .article-quote-p1 {
