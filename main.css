@@ -211,7 +211,7 @@ a {
   box-shadow: -5px 0 5px #b6bdb5, 5px 0 5px #b6bdb5, 0 5px 5px #b6bdb5;
   border-radius: 8px;
   min-width: 360px;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   margin-left: 0.3rem;
   margin-right: 0.3rem;
 }
@@ -251,11 +251,6 @@ a {
   width: 18px;
   height: 18px;
   padding-right: 0.3rem;
-}
-
-.aside-popular-booking {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
 }
 
 /* story below */
@@ -350,6 +345,34 @@ footer nav {
     justify-content: center;
     align-items: center;
   }
+
+    /* a elements below */
+  .a-online {
+      font-weight: bold;
+      color: var(--primary-button-text-color);
+      background-color: var(--primary-button-color);
+      text-decoration-line: none;
+      font-size: 0.6rem;
+      margin-bottom: 0.5rem;
+      margin-top: 0.3rem;
+      margin-left: 0.5rem;
+      max-width: 308px;
+      min-width: 275px;
+      max-height: 66px;
+      min-height: 66px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .a-on-site {
+      margin-top: 0.3rem;
+      margin-bottom: 0.5rem;
+      min-width: 275px;
+    }
+    .a-book-and-challenges {
+      min-width: 150px;
+    }
+  
   /* quote below */
   .article-quote-p1 {
     grid-column: 3 / span 3;
@@ -371,6 +394,7 @@ footer nav {
   .article-quote-img-2 {
     width: 60%;
   }
+
   /* cards below */
   .main-article-cards {
     overflow-x: scroll;
@@ -385,31 +409,8 @@ footer nav {
     font-size: 0.4rem;
   }
 
-  /* a elements below */
-  .a-online {
-    font-weight: bold;
-    color: var(--primary-button-text-color);
-    background-color: var(--primary-button-color);
-    text-decoration-line: none;
-    font-size: 0.6rem;
-    margin-bottom: 0.5rem;
-    margin-top: 0.3rem;
-    margin-left: 0.5rem;
-    max-width: 308px;
-    min-width: 275px;
-    max-height: 66px;
-    min-height: 66px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .a-on-site {
-    margin-top: 0.3rem;
-    margin-bottom: 0.5rem;
-    min-width: 275px;
-  }
-  .a-book-and-challenges {
-    min-width: 150px;
+  .aside-popular-booking {
+    padding: 1rem;
   }
 
   /*story below */
@@ -485,6 +486,7 @@ footer nav {
   .nav-header-a-contact {
     color: var(--secondary-button-color);
   }
+
   /* figure top and figcation below */
   .figure-img-top {
     height: 460px;
@@ -505,6 +507,34 @@ footer nav {
   .h2-popular {
     margin-bottom: 2rem;
     margin-top: 3rem;
+  }
+
+  /* a elements below */
+  .a-online {
+    font-weight: bold;
+    color: var(--primary-button-text-color);
+    background-color: var(--primary-button-color);
+    text-decoration-line: none;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.3rem;
+    max-width: 308px;
+    min-width: 308px;
+    max-height: 66px;
+    min-height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .a-on-site {
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+    order: 1;
+    margin-left: 0.5rem;
+  }
+
+  .a-book-and-challenges {
+    margin-left: 0rem;
   }
 
   /* quote below */
@@ -539,34 +569,6 @@ footer nav {
     grid-row: 1 / span 2;
   }
 
-  /* a elements below */
-  .a-online {
-    font-weight: bold;
-    color: var(--primary-button-text-color);
-    background-color: var(--primary-button-color);
-    text-decoration-line: none;
-    font-size: 0.6rem;
-    margin-bottom: 0.5rem;
-    margin-top: 0.3rem;
-    max-width: 308px;
-    min-width: 308px;
-    max-height: 66px;
-    min-height: 66px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .a-on-site {
-    margin-top: 0.3rem;
-    margin-bottom: 0.5rem;
-    order: 1;
-    margin-left: 0.5rem;
-  }
-
-  .a-book-and-challenges {
-    margin-left: 0rem;
-  }
-
   /* cards below */
   .h2-popular {
     font-size: 1rem;
@@ -592,6 +594,10 @@ footer nav {
   .article-card-p1 {
     font-size: 0.4rem;
     margin-left: 2rem;
+  }
+
+  .aside-popular-booking {
+    padding: 1rem;
   }
 
   /* story below */
