@@ -86,7 +86,7 @@ a {
   align-items: center;
 }
 
-.article-story-a{
+.article-story-a {
   color: var(--primary-ondark-text-border-button);
   border: 2px solid var(--primary-ondark-text-border-button);
   background-color: transparent;
@@ -101,7 +101,7 @@ a {
   align-items: center;
 }
 
-.article-card-a{
+.article-card-a {
   background-color: var(--primary-button-color);
   color: var(--primary-button-text-color);
 
@@ -259,7 +259,7 @@ a {
 }
 
 /* story below */
-.article-story{
+.article-story {
   background-color: var(--dark-background-color);
   text-align: center;
   display: flex;
@@ -317,7 +317,6 @@ footer nav {
 }
 
 @media screen and (max-width: 640px) {
-  
   .article-quote-img-2,
   .article-quote-p2,
   .article-quote-date2,
@@ -360,7 +359,7 @@ footer nav {
     grid-column: 3 / span 3;
     grid-row: 2 / span 1;
   }
-  .article-quote-p2{
+  .article-quote-p2 {
     grid-column: 8 / span 3;
     grid-row: 1 / span 1;
   }
@@ -373,7 +372,7 @@ footer nav {
     width: 60%;
   }
   /* cards below */
-  .main-article-cards  {
+  .main-article-cards {
     overflow-x: scroll;
     margin-left: 0;
     gap: 0.5rem;
@@ -524,7 +523,7 @@ footer nav {
     grid-row: 1 / span 1;
     font-size: 0.6rem;
   }
-  .article-quote-date2{
+  .article-quote-date2 {
     grid-column: 7 / span 3;
     grid-row: 2 / span 1;
     font-size: 0.55rem;
@@ -573,7 +572,7 @@ footer nav {
     font-size: 1rem;
   }
 
-  .main-article-cards  {
+  .main-article-cards {
     justify-content: space-evenly;
     gap: 0rem;
     margin-left: 0;
