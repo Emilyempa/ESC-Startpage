@@ -14,6 +14,12 @@
   font-size: 40px;
   
 }
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
 /* header below */
 .header {
   background-color: var(--dark-background-color);
@@ -273,6 +279,11 @@ a {
 }
 
 /* main booking online and onsite below */
+.figcaption-on-site,
+.figcaption-online {
+  padding: 0.3rem;
+}
+
 .figcaption-on-site h4,
 .figcaption-online h4 {
   font-size: 0.6rem;
@@ -638,11 +649,15 @@ footer nav {
     height: 100%;
   }
 
+  .figcaption-on-site,
+.figcaption-online {
+  padding: 0rem;
+}
+
   .figcaption-on-site {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
     align-self: center;
-
     margin: 0.6rem 4rem;
   }
 
@@ -650,7 +665,6 @@ footer nav {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
     align-self: center;
-
     margin-left: 4rem;
     margin-right: 4rem;
     margin-top: 0;
