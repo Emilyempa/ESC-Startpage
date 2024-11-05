@@ -34,21 +34,22 @@ menuButton.appendChild(menuIcon);
 closeButton.appendChild(closeIcon);
 
 const header = document.querySelector(".header");
-const mediaQuery = window.matchMedia("(max-width: 1280px)");
+const mediaQuery = window.matchMedia("(max-width: 700px)");
 
 function myMediaQuery(event) {
-  if(event.matches) {
-  header.appendChild(menuButton);
-  }
-  else {
-    if(header.contains(menuButton));
+  if (event.matches) {
+    header.appendChild(menuButton);
+    menuButton.style.marginLeft = "auto";
+    menuButton.style.marginTop = "-1rem";
+  } else {
+    if (header.contains(menuButton));
     header.removeChild(menuButton);
   }
-};
+}
 
 myMediaQuery(mediaQuery);
 
-mediaQuery.addEventListener("change", myMediaQuery)
+mediaQuery.addEventListener("change", myMediaQuery);
 
 const navMenu = document.querySelector(".nav-header");
 
@@ -56,16 +57,17 @@ const navMenu = document.querySelector(".nav-header");
 //   header.parentNode.insertBefore(navMenu, header);
 // }
 
-
 menuButton.addEventListener("click", () => {
-//   menuIcon.classList.toggle("active");
-//   closeIcon.classList.toggle("active");
+  //   menuIcon.classList.toggle("active");
+  //   closeIcon.classList.toggle("active");
   const navMenu = document.querySelector(".nav-header");
   // navMenu.classList.toggle("active");
   navMenu.appendChild(closeButton);
+  closeButton.style.marginLeft = "auto";
+  // header.style.zIndex = "500";
   navMenu.style.backgroundColor = "#011827";
   navMenu.style.color = "#ffffff";
-  navMenu.style.position = "absolut"; 
+  navMenu.style.position = "absolut";
   navMenu.style.fontSize = "0.7rem";
   // navMenu.style.padding = "4rem";
   navMenu.style.zIndex = "1000";
@@ -75,9 +77,8 @@ menuButton.addEventListener("click", () => {
   navMenu.style.flexDirection = "column";
   // navMenu.style.justifyContent = "center";
   navMenu.style.alignItems = "center";
-  
 });
 
 closeButton.addEventListener("click", () => {
-  navMenu.style.display = "none"
-})
+  navMenu.style.display = "none";
+});
