@@ -12,10 +12,10 @@
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 40px;
-  
 }
 
-html, body{
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -149,7 +149,7 @@ a {
   margin-top: 0.5rem;
 }
 
-.figcaption-a{
+.figcaption-a {
   margin-bottom: 2rem;
 }
 
@@ -214,6 +214,7 @@ a {
   gap: 0.2rem;
   overflow-x: hidden;
   margin-left: 0.5rem;
+  overflow-x: scroll;
 }
 
 .article-card {
@@ -327,8 +328,7 @@ footer nav {
   font-weight: normal;
 }
 
-
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 700px) {
   .article-quote-img-2,
   .article-quote-p2,
   .article-quote-date2,
@@ -337,10 +337,21 @@ footer nav {
   }
 }
 
-@media screen and (min-width: 640px) and (max-width: 1280px) {
+@media screen and (min-width: 700px) and (max-width: 1280px) {
   /* header below */
   .nav-header {
-    display: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.5rem;
+    background-color: var(--dark-background-color);
+    color: var(--light-text-color);
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.6rem;
+  }
+  .nav-header-a-contact {
+    color: var(--secondary-button-color);
   }
   .header-h1 {
     width: 500px;
@@ -365,22 +376,22 @@ footer nav {
 
   /* a elements below */
   .a-online {
-      font-weight: bold;
-      color: var(--primary-button-text-color);
-      background-color: var(--primary-button-color);
-      text-decoration-line: none;
-      font-size: 0.6rem;
-      margin-bottom: 0.5rem;
-      margin-top: 0.3rem;
-      margin-left: 0.5rem;
-      max-width: 308px;
-      min-width: 275px;
-      max-height: 66px;
-      min-height: 66px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    font-weight: bold;
+    color: var(--primary-button-text-color);
+    background-color: var(--primary-button-color);
+    text-decoration-line: none;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.3rem;
+    margin-left: 0.5rem;
+    max-width: 308px;
+    min-width: 275px;
+    max-height: 66px;
+    min-height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .a-on-site {
     margin-top: 0.3rem;
     margin-bottom: 0.5rem;
@@ -390,10 +401,10 @@ footer nav {
     min-width: 150px;
     margin-left: 0.25rem;
   }
-  .figcaption-a{
+  .figcaption-a {
     margin-bottom: 0.5rem;
-  }  
-  
+  }
+
   /* quote below */
   .article-quote-p1 {
     grid-column: 3 / span 3;
@@ -418,7 +429,6 @@ footer nav {
 
   /* cards below */
   .main-article-cards {
-    overflow-x: scroll;
     margin-left: 0;
     gap: 0.5rem;
   }
@@ -558,7 +568,7 @@ footer nav {
     margin-left: 0rem;
   }
 
-  .figcaption-a{
+  .figcaption-a {
     margin-bottom: 0.5rem;
   }
 
@@ -652,9 +662,9 @@ footer nav {
   }
 
   .figcaption-on-site,
-.figcaption-online {
-  padding: 0rem;
-}
+  .figcaption-online {
+    padding: 0rem;
+  }
 
   .figcaption-on-site {
     grid-column: 2 / span 1;
