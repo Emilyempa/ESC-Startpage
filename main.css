@@ -329,6 +329,19 @@ footer nav {
   font-weight: normal;
 }
 
+/* keyframes and affected menu below */
+@keyframes Opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.nav-header.active{
+  animation: Opacity 0.3s ease-in 0s 1 normal both;
+}
+
 @media screen and (max-width: 700px) {
   .article-quote-img-2,
   .article-quote-p2,
@@ -350,6 +363,7 @@ footer nav {
     padding-right: 2.5rem;
     padding-top: 1rem;
     padding-bottom: 0.6rem;
+    animation: "none";
   }
   .nav-header-a-contact {
     color: var(--secondary-button-color);
