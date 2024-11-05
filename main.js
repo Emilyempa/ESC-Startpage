@@ -34,23 +34,50 @@ menuButton.appendChild(menuIcon);
 closeButton.appendChild(closeIcon);
 
 const header = document.querySelector(".header");
-header.appendChild(menuButton);
-// header.appendChild(closeButton);
+const mediaQuery = window.matchMedia("(max-width: 1280px)");
 
+function myMediaQuery(event) {
+  if(event.matches) {
+  header.appendChild(menuButton);
+  }
+  else {
+    if(header.contains(menuButton));
+    header.removeChild(menuButton);
+  }
+};
+
+myMediaQuery(mediaQuery);
+
+mediaQuery.addEventListener("change", myMediaQuery)
+
+const navMenu = document.querySelector(".nav-header");
+
+// if (header && navMenu) {
+//   header.parentNode.insertBefore(navMenu, header);
+// }
 
 
 menuButton.addEventListener("click", () => {
 //   menuIcon.classList.toggle("active");
 //   closeIcon.classList.toggle("active");
   const navMenu = document.querySelector(".nav-header");
-  navMenu.classList.toggle("active");
+  // navMenu.classList.toggle("active");
   navMenu.appendChild(closeButton);
   navMenu.style.backgroundColor = "#011827";
-  navMenu.style.color = "#ffffff"
-  navMenu.style.position = "fixed";
-
-
-//   lägg till top left och width och height ev nav.style.zIndex = "1000"
+  navMenu.style.color = "#ffffff";
+  navMenu.style.position = "absolut"; 
+  navMenu.style.fontSize = "0.7rem";
+  // navMenu.style.padding = "4rem";
+  navMenu.style.zIndex = "1000";
+  navMenu.style.height = "100%";
+  navMenu.style.width = "100%";
+  navMenu.style.display = "flex";
+  navMenu.style.flexDirection = "column";
+  // navMenu.style.justifyContent = "center";
+  navMenu.style.alignItems = "center";
+  
 });
 
-
+closeButton.addEventListener("click", () => {
+  navMenu.style.display = "none"
+})
