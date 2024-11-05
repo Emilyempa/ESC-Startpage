@@ -41,7 +41,9 @@ function myMediaQuery(event) {
     header.appendChild(menuButton);
     menuButton.style.marginLeft = "auto";
     menuButton.style.marginTop = "-1rem";
+    menuButton.style.paddingRight = "0.55rem";
   } else {
+    menuButton.style.marginTop = "none";
     if (header.contains(menuButton));
     header.removeChild(menuButton);
   }
@@ -53,29 +55,29 @@ mediaQuery.addEventListener("change", myMediaQuery);
 
 const navMenu = document.querySelector(".nav-header");
 
-// if (header && navMenu) {
-//   header.parentNode.insertBefore(navMenu, header);
-// }
-
 menuButton.addEventListener("click", () => {
   //   menuIcon.classList.toggle("active");
-  //   closeIcon.classList.toggle("active");
   const navMenu = document.querySelector(".nav-header");
   // navMenu.classList.toggle("active");
-  navMenu.appendChild(closeButton);
+  // navMenu.appendChild(closeButton); Nedanför istället så den kommer först av barnen
+  navMenu.insertBefore(closeButton, navMenu.firstChild);
   closeButton.style.marginLeft = "auto";
-  // header.style.zIndex = "500";
+  closeButton.style.marginTop = "-3rem";
+  // closeButton.style.marginTop = "-5rem";
+  // header.style.zIndex = "1";
+  navMenu.style.top = '0';
+  navMenu.style.left = '0';
   navMenu.style.backgroundColor = "#011827";
   navMenu.style.color = "#ffffff";
-  navMenu.style.position = "absolut";
+  navMenu.style.position = "fixed";
   navMenu.style.fontSize = "0.7rem";
-  // navMenu.style.padding = "4rem";
   navMenu.style.zIndex = "1000";
-  navMenu.style.height = "100%";
-  navMenu.style.width = "100%";
+  navMenu.style.margin = "0.5rem"
+  navMenu.style.height = "90%";
+  navMenu.style.width = "90%";
   navMenu.style.display = "flex";
   navMenu.style.flexDirection = "column";
-  // navMenu.style.justifyContent = "center";
+  navMenu.style.justifyContent = "space-evenly";
   navMenu.style.alignItems = "center";
 });
 
