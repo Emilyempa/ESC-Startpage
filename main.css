@@ -9,7 +9,7 @@
   --light-background-color: #e5e5e5;
   --dark-background-color: #011827;
   --figcaption-a-color: #36769d;
-  background-color: var(--light-background-color);
+  background-color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 40px;
   
@@ -325,6 +325,12 @@ footer nav {
 }
 .footer-nav-a {
   font-weight: normal;
+}
+.nav-header.active{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 640px) {
