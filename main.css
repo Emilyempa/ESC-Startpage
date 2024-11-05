@@ -326,12 +326,7 @@ footer nav {
 .footer-nav-a {
   font-weight: normal;
 }
-.nav-header.active{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 
 @media screen and (max-width: 640px) {
   .article-quote-img-2,
