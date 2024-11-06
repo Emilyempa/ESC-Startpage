@@ -21,11 +21,15 @@ closeIcon.className = "close-icon";
 menuIcon.style.width = "45px";
 menuIcon.style.height = "26px";
 
-closeIcon.style.width = "37px";
-closeIcon.style.height = "40px";
+closeIcon.style.width = "35px";
+closeIcon.style.height = "35px";
 
 menuButton.style.backgroundColor = "transparent";
 menuButton.style.border = "none";
+menuButton.style.marginleft = "auto";
+menuButton.style.alignSelf = "flex-start";
+menuButton.style.paddingLeft = "2rem";
+menuButton.style.paddingTop = "0.3rem";
 
 closeButton.style.backgroundColor = "transparent";
 closeButton.style.border = "none";
@@ -34,14 +38,14 @@ menuButton.appendChild(menuIcon);
 closeButton.appendChild(closeIcon);
 
 const header = document.querySelector(".header");
+
+header.style.padding = "0.5rem";
+
 const mediaQuery = window.matchMedia("(max-width: 700px)");
 
 function myMediaQuery(event) {
   if (event.matches) {
     header.appendChild(menuButton);
-    menuButton.style.marginLeft = "auto";
-    menuButton.style.marginTop = "-1rem";
-    menuButton.style.paddingRight = "0.55rem";
   } else {
     menuButton.style.marginTop = "none";
     if (header.contains(menuButton));
@@ -75,8 +79,8 @@ menuButton.addEventListener("click", () => {
   navMenu.style.alignItems = "center";
   navMenu.style.gap = "1.2rem";
   closeButton.style.alignSelf = "flex-end";
-  closeButton.style.padding = "0.5rem 0.5rem 3.5rem 0.5rem";
-  navMenu.style.fontSize = "0.9rem";
+  closeButton.style.padding = "0.5rem 0.5rem 3rem 0.5rem";
+  navMenu.style.fontSize = "0.8rem";
 });
 
 closeButton.addEventListener("click", () => {
