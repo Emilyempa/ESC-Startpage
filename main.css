@@ -34,14 +34,12 @@ body {
 
 .header-h1 {
   width: 130px;
-  margin: 0.2rem;
+  margin-left: 0.2rem;
 }
 
 header img {
   width: 128px;
   height: 82px;
-  margin-left: 0.5rem;
-  margin-top: 0.2rem;
 }
 
 /* top figure and figcaption below */
@@ -362,7 +360,6 @@ footer nav {
     color: var(--light-text-color);
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    padding-top: 1rem;
     padding-bottom: 0.6rem;
     animation: "none";
   }
@@ -372,6 +369,8 @@ footer nav {
   .header-h1 {
     width: 500px;
     font-size: 0.5rem;
+    margin-left: 0.2rem;
+    margin-top: 0.5rem;
   }
 
   /* top figure and figcaption below */
@@ -516,8 +515,8 @@ footer nav {
   .header-h1 {
     width: 600px;
     font-size: 0.5rem;
-    position: relative;
-    top: 0.4rem;
+    margin-left: 0.2rem;
+    margin-top: 0.5rem;
   }
   .nav-header {
     display: flex;
@@ -527,7 +526,6 @@ footer nav {
     color: var(--light-text-color);
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    padding-top: 1rem;
     padding-bottom: 0.6rem;
   }
   .nav-header-a-contact {
