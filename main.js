@@ -63,40 +63,26 @@ menuButton.addEventListener("click", () => {
   navMenu.classList.toggle("active");
   // navMenu.appendChild(closeButton); Nedanför istället så den kommer först av barnen
   navMenu.insertBefore(closeButton, navMenu.firstChild);
-  closeButton.style.marginLeft = "auto";
-  closeButton.style.marginTop = "-3rem";
+  // closeButton.style.marginLeft = "auto";
+  // closeButton.style.marginTop = "-3rem";
   navMenu.style.top = "0";
-  // navMenu.style.left = "0";
-  // navMenu.style.right = "0";
+  navMenu.style.left = "0";
+  navMenu.style.right = "0";
+  navMenu.style.bottom = "0";
   navMenu.style.backgroundColor = "#011827";
   navMenu.style.color = "#ffffff";
   navMenu.style.position = "fixed";
   navMenu.style.fontSize = "0.7rem";
   navMenu.style.zIndex = "1000";
-  // navMenu.style.margin = "0.5rem";
-  navMenu.style.height = "96%";
-  navMenu.style.width = "90%";
-  // navMenu.style.height = "100%";
-  // navMenu.style.width = "100%";
-  // navMenu.style.border = "5rem"
-  navMenu.style.border = "20px solid rgba(255, 255, 255, 0.5)";
+  // navMenu.style.border = "5rem";
+  // navMenu.style.border = "20px";
   navMenu.style.display = "flex";
   navMenu.style.flexDirection = "column";
   // navMenu.style.justifyContent = "center"; blir barnen för nära varandra
   navMenu.style.justifyContent = "space-evenly";
   navMenu.style.alignItems = "center";
   // navMenu.child.style.padding = "3rem";
-  // if(navMenu.classList.contains("active")){
-  //   body.style.opacity = "0.5";
-  //   navMenu.style.opacity = "1";
-  
-  // } else{
-  //   body.style.opacity = "1";
-  // }
- 
 });
-
-
 
 closeButton.addEventListener("click", () => {
   navMenu.style.display = "none";
