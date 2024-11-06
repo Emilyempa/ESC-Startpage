@@ -54,17 +54,10 @@ myMediaQuery(mediaQuery);
 mediaQuery.addEventListener("change", myMediaQuery);
 
 const navMenu = document.querySelector(".nav-header");
-const body = document.querySelector("body");
 
 menuButton.addEventListener("click", () => {
-  //   menuIcon.classList.toggle("active");
-  // event.stopPropagation();
-  // const navMenu = document.querySelector(".nav-header");
   navMenu.classList.toggle("active");
-  // navMenu.appendChild(closeButton); Nedanför istället så den kommer först av barnen
   navMenu.insertBefore(closeButton, navMenu.firstChild);
-  // closeButton.style.marginLeft = "7rem"; funkar innan jag ändrade på texten under
-  // closeButton.style.marginTop = "-2.5rem";
   navMenu.style.top = "0";
   navMenu.style.left = "0";
   navMenu.style.right = "0";
@@ -75,13 +68,15 @@ menuButton.addEventListener("click", () => {
   navMenu.style.position = "fixed";
   navMenu.style.fontSize = "0.7rem";
   navMenu.style.zIndex = "1000";
-  navMenu.style.boxShadow = "0 0 2rem rgba(255, 255, 255, 0.7)";
+  navMenu.style.boxShadow = "0 0 2rem rgba(255, 255, 255, 0.8)";
   navMenu.style.display = "flex";
   navMenu.style.flexDirection = "column";
-  // navMenu.style.justifyContent = "center"; blir barnen för nära varandra
-  navMenu.style.justifyContent = "center";
+  navMenu.style.justifyContent = "flex-start";
   navMenu.style.alignItems = "center";
-  // navMenu.child.style.padding = "3rem";
+  navMenu.style.gap = "1.2rem";
+  closeButton.style.alignSelf = "flex-end";
+  closeButton.style.padding = "0.5rem 0.5rem 3.5rem 0.5rem";
+  navMenu.style.fontSize = "0.9rem";
 });
 
 closeButton.addEventListener("click", () => {
