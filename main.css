@@ -43,6 +43,7 @@ header img {
   margin-left: 0.5rem;
   margin-top: 0.2rem;
 }
+
 /* top figure and figcaption below */
 .figure-img {
   width: 100%;
@@ -338,7 +339,7 @@ footer nav {
     opacity: 1;
   }
 }
-.nav-header.active{
+.nav-header.active {
   animation: Opacity 0.3s ease-in 0s 1 normal both;
 }
 
