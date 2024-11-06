@@ -18,7 +18,7 @@ closeIcon.src = "./pics/x.png";
 closeIcon.alt = "close menu button";
 closeIcon.className = "close-icon";
 
-menuIcon.style.width = "51px";
+menuIcon.style.width = "45px";
 menuIcon.style.height = "26px";
 
 closeIcon.style.width = "37px";
@@ -63,23 +63,23 @@ menuButton.addEventListener("click", () => {
   navMenu.classList.toggle("active");
   // navMenu.appendChild(closeButton); Nedanför istället så den kommer först av barnen
   navMenu.insertBefore(closeButton, navMenu.firstChild);
-  // closeButton.style.marginLeft = "auto";
-  // closeButton.style.marginTop = "-3rem";
+  // closeButton.style.marginLeft = "7rem"; funkar innan jag ändrade på texten under
+  // closeButton.style.marginTop = "-2.5rem";
   navMenu.style.top = "0";
   navMenu.style.left = "0";
   navMenu.style.right = "0";
   navMenu.style.bottom = "0";
+  navMenu.style.margin = "0.4rem";
   navMenu.style.backgroundColor = "#011827";
   navMenu.style.color = "#ffffff";
   navMenu.style.position = "fixed";
   navMenu.style.fontSize = "0.7rem";
   navMenu.style.zIndex = "1000";
-  // navMenu.style.border = "5rem";
-  // navMenu.style.border = "20px";
+  navMenu.style.boxShadow = "0 0 2rem rgba(255, 255, 255, 0.7)";
   navMenu.style.display = "flex";
   navMenu.style.flexDirection = "column";
   // navMenu.style.justifyContent = "center"; blir barnen för nära varandra
-  navMenu.style.justifyContent = "space-evenly";
+  navMenu.style.justifyContent = "center";
   navMenu.style.alignItems = "center";
   // navMenu.child.style.padding = "3rem";
 });
@@ -87,11 +87,4 @@ menuButton.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
   navMenu.style.display = "none";
   navMenu.classList.remove("active");
-  // body.style.opacity = "1";
 });
-
-// if(navMenu.classList.contains("active")){
-//   body.style.opacity = "0.5";
-//   navMenu.style.opacity = "1";
-
-// }
