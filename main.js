@@ -26,10 +26,12 @@ closeIcon.style.height = "35px";
 
 menuButton.style.backgroundColor = "transparent";
 menuButton.style.border = "none";
-menuButton.style.marginleft = "auto";
 menuButton.style.alignSelf = "flex-start";
 menuButton.style.paddingLeft = "2rem";
 menuButton.style.paddingTop = "0.3rem";
+menuButton.style.flexGrow = "1";
+menuButton.style.display = "flex";
+menuButton.style.justifyContent = "flex-end";
 
 closeButton.style.backgroundColor = "transparent";
 closeButton.style.border = "none";
