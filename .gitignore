@@ -1,0 +1,6 @@
+node_modules
+main.css.map
+# added to ignore below just to try to install sass in projekt but not using it
+main.scss
+package-lock.json
+package.json
