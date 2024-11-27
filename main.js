@@ -1,3 +1,5 @@
+highestRanking()
+
 const menuButton = document.createElement("button");
 menuButton.className = "menu-button";
 menuButton.ariaLabel = "open menu";
@@ -89,3 +91,38 @@ closeButton.addEventListener("click", () => {
   navMenu.style.display = "none";
   navMenu.classList.remove("active");
 });
+
+async function highestRanking() {
+  try{
+      const response = await fetch("https://lernia-sjj-assignments.vercel.app/api/challenges");
+      const data = await response.json();
+      data.challenges.sort(function(a, b){return b.rating - a.rating});
+      const topThree =data.challenges.slice(0, 3);
+      console.log(topThree);
+      const cards = document.querySelectorAll(".article-card");
+      topThree.forEach((challenge, index) => {
+        if (cards[index]) {
+          const card = cards[index];
+          card.querySelector(".article-card-img").src = challenge.image;
+          card.querySelector(".article-card-title").textContent = challenge.title;
+          card.querySelector(".article-online-onsite").textContent = "";
+          card.querySelector(".article-card-p2").textContent = challenge.description;  
+          card.querySelector(".article-card-p1").textContent = `${challenge.minParticipants}-${challenge.maxParticipants} participants`;
+            if (challenge.type.includes("onsite")) {
+              card.querySelector(".article-online-onsite").textContent = `(${challenge.type})`;
+              card.querySelector(".online-onsite-icon").src = "./pics/home.png";
+              card.querySelector(".article-card-a").textContent = "Book this room";
+            }
+        }
+      });
+  }catch (error){
+      console.error("error", error);
+      }
+      
+  };
+  
+        
+  
+
+  
+   
