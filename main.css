@@ -239,7 +239,7 @@ a {
   margin-left: 0.5rem;
 }
 
-.article-card h3 {
+.article-card-title {
   font-size: 0.7rem;
   font-weight: normal;
   margin-bottom: 0;
@@ -267,6 +267,11 @@ a {
   border-radius: 8px;
   width: 100%;
   height: auto;
+}
+
+.article-online-onsite{
+  font-size: 0.5rem;
+  margin-left: 0.4rem;
 }
 
 .article-card-imgstar {
