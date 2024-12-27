@@ -4,3 +4,5 @@ main.css.map
 main.scss
 package-lock.json
 package.json
+createStars.js
+createStars.test.js
